@@ -55,10 +55,10 @@ const Data = () => {
           ></path>
         </svg>
       </h1>
-      <h3 className="home__subtitle">Front-End Developer</h3>
+      <h3 className="home__subtitle">Software Developer - Frontend</h3>
       <p className="home__description">
-        Computer & Communication Senior Year Undergrad, Manipal University
-        Jaipur
+       B.E. Computer & Communication Tech, 2023
+Manipal University Jaipur
       </p>
 
       <a href="#contact" className="button button--flex">

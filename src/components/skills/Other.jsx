@@ -4,6 +4,8 @@ const Other = () => {
   return (
     <div className="skills__content">
       <h3 className="skills__title">Backend / Other</h3>
+      <span className="imp" style={{ visibility: "hidden" }}>!important</span>
+
       <div className="skills__box">
         <div className="skills__group">
           <div className="skills__data">
@@ -17,7 +19,7 @@ const Other = () => {
             <i class="bx bxl-c-plus-plus"></i>
             <div>
               <h3 className="skills__name">C/C++</h3>
-              <span className="skills__level">Intermediate</span>
+              <span className="skills__level">Basic</span>
             </div>
           </div>
 
@@ -39,24 +41,24 @@ const Other = () => {
 
         <div className="skills__group">
           <div className="skills__data">
-            <i class="bx bxl-javascript"></i>
+            <i class="bx bxl-nodejs"></i>
             <div>
-              <h3 className="skills__name">JavaScript</h3>
-              <span className="skills__level">Basic</span>
+              <h3 className="skills__name">NodeJS</h3>
+              <span className="skills__level">Intermediate</span>
             </div>
           </div>
           <div className="skills__data">
-            <i class="bx bxl-drupal"></i>
+            <i class="bx bxl-mongodb"></i>
             <div>
-              <h3 className="skills__name">Drupal</h3>
-              <span className="skills__level">Basic</span>
+              <h3 className="skills__name">MongoDB</h3>
+              <span className="skills__level">Intermediate</span>
             </div>
           </div>
           <div className="skills__data">
-            <i class="bx bxl-wordpress"></i>
+            <i class='bx bxs-data'></i>
             <div>
-              <h3 className="skills__name">Wordpress</h3>
-              <span className="skills__level">Basic</span>
+              <h3 className="skills__name">Supabase</h3>
+              <span className="skills__level">Intermediate</span>
             </div>
           </div>
           <div className="skills__data">

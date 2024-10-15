@@ -4,21 +4,30 @@ import Work3 from "../../assets/work3.jpg";
 import Work4 from "../../assets/work4.jpg";
 import Work5 from "../../assets/work5.jpg";
 import Work6 from "../../assets/work6.jpg";
+import Work7 from "../../assets/makemyweb.png";
+import Work8 from "../../assets/view.png";
 
 export const projectsData = [
   {
     id: 1,
     image: Work1,
-    title: "Lens Corp Website",
+    title: "LENS Corporation Website",
     category: "web",
-    link: "https://lens-site.vercel.app/",
+    link: "https://lenscorp.ai/",
   },
   {
     id: 2,
-    image: Work2,
-    title: "Weather App",
+    image: Work7,
+    title: "MakeMyWeb Landing Page",
+    category: "web",
+    link: "https://makemyweb.ai/",
+  },
+  {
+    id: 3,
+    image: Work8,
+    title: "Lens View",
     category: "app",
-    link: "https://react-weather-app-lemon.vercel.app/",
+    link: "https://lensview.cloud/",
   },
   {
     id: 3,
@@ -36,13 +45,20 @@ export const projectsData = [
   },
   {
     id: 5,
+    image: Work2,
+    title: "Weather App",
+    category: "app",
+    link: "https://react-weather-app-lemon.vercel.app/",
+  },
+  {
+    id: 6,
     image: Work5,
     title: "Todo App",
     category: "app",
     link: "https://github.com/prathamrohatgi26/quillbotassignment",
   },
   {
-    id: 6,
+    id: 7,
     image: Work6,
     title: "Old Portfolio",
     category: "web",

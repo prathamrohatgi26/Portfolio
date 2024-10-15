@@ -11,7 +11,7 @@ const Qualification = () => {
 
   return (
     <section className="qualification section">
-      <h2 className="section__title">Qualifation</h2>
+      <h2 className="section__title">Qualification</h2>
       <span className="section__subtitle">My Journey</span>
 
       <div className="qualification__container container">
@@ -107,14 +107,33 @@ const Qualification = () => {
                 : "qualification__content button--flex"
             }
           >
+
+            <div className="qualification__data">
+              <div></div>
+
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
+              <div>
+                <h3 className="qualification__title">
+                  Software Developer - Frontend
+                </h3>
+                <span className="qualification__subtitle">LENS Corporation</span>
+                <div className="qualification__calander">
+                  <i className="uil uil-calendar-alt"></i> June 2023 - Present
+                </div>
+              </div>
+            </div>
+
             <div className="qualification__data">
               <div>
                 <h3 className="qualification__title">
                   Frontend Developer Intern
                 </h3>
-                <span className="qualification__subtitle">Lens</span>
+                <span className="qualification__subtitle">LENS Corporation</span>
                 <div className="qualification__calander">
-                  <i className="uil uil-calendar-alt"></i> Nov 2022 - Present
+                  <i className="uil uil-calendar-alt"></i> Nov 2022 - May 2023
                 </div>
               </div>
 
