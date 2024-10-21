@@ -6,6 +6,7 @@ import Work5 from "../../assets/work5.jpg";
 import Work6 from "../../assets/work6.jpg";
 import Work7 from "../../assets/makemyweb.png";
 import Work8 from "../../assets/view.png";
+import Work9 from '../../assets/work7.png'
 
 export const projectsData = [
   {
@@ -30,39 +31,46 @@ export const projectsData = [
     link: "https://lensview.cloud/",
   },
   {
-    id: 3,
+    id: 4,
     image: Work3,
     title: "Kanban Board",
     category: "app",
     link: "https://kanban-board-react-alpha.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     image: Work4,
     title: "Simple Task Tracker",
     category: "app",
     link: "https://react-task-tracker-wine.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
     image: Work2,
     title: "Weather App",
     category: "app",
     link: "https://react-weather-app-lemon.vercel.app/",
   },
   {
-    id: 6,
+    id: 7,
     image: Work5,
     title: "Todo App",
     category: "app",
     link: "https://github.com/prathamrohatgi26/quillbotassignment",
   },
   {
-    id: 7,
+    id: 8,
     image: Work6,
     title: "Old Portfolio",
     category: "web",
     link: "https://prathamrohatgi26.github.io/cv/",
+  },
+  {
+    id: 9,
+    image: Work9,
+    title: "Flappy Bird",
+    category: "app",
+    link: "flappy-bird-pied-one.vercel.app",
   },
 ];
 
