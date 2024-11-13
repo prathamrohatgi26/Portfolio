@@ -55,7 +55,7 @@ const Qualification = () => {
                   Manipal University Jaipur
                 </span>
                 <div className="qualification__calander">
-                  <i className="uil uil-calendar-alt"></i> 2019 - Present
+                  <i className="uil uil-calendar-alt"></i> 2019 - 2023
                 </div>
               </div>
 
