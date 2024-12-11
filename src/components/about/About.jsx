@@ -16,16 +16,17 @@ const About = () => {
         <div className="about__data">
           <Info />
           <p className="about__description">
-            {/* A Frontend Developer wannabe Fullstack based in Meerut, India. I'm
-            passionate about web development and love to code beautiful and
-            attractive things, always ready to challenge myself and explore new
-            areas of work. <br></br>
-            <br></br>
-            Currently working as a frontend developer intern at Lens. */}
-            A Software Developer - Frontend based in Meerut, India, with a passion for web development and creating efficient, visually appealing interfaces. I enjoy working with modern web technologies and am always eager to take on new challenges, pushing myself to explore new areas in development.
+            A Software Developer - Frontend based in Meerut, India, with a
+            passion for web development and creating efficient, visually
+            appealing interfaces. I enjoy working with modern web technologies
+            and am always eager to take on new challenges, pushing myself to
+            explore new areas in development.
             <br></br>
             <br></br>
-            Currently, I lead a team of developers and am responsible for building and managing LensView, a Video Management System. With 1.5+ years of experience, I've completed multiple projects using technologies like Next.js, PostgreSQL, Svelte, and Pocketbase.
+            Currently, I lead a team of developers and am responsible for
+            building and managing LensView, a Video Management System. With 2+
+            years of experience, I've completed multiple projects using
+            technologies like Next.js, PostgreSQL, Svelte, and Pocketbase.
           </p>
 
           <a href={CV} download="" className="button button--flex">

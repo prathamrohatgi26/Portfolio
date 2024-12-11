@@ -6,8 +6,8 @@ import Work5 from "../../assets/work5.jpg";
 import Work6 from "../../assets/work6.jpg";
 import Work7 from "../../assets/makemyweb.png";
 import Work8 from "../../assets/view.png";
-import Work9 from '../../assets/work7.png'
-import Work10 from '../../assets/word10.png'
+import Work9 from "../../assets/work7.png";
+import Work10 from "../../assets/word10.png";
 
 export const projectsData = [
   {
@@ -43,7 +43,7 @@ export const projectsData = [
     image: Work10,
     title: "Bento Portfolio",
     category: "app",
-    link: 'https://pratham-bentofolio.vercel.app',
+    link: "https://pratham-bentofolio.vercel.app",
   },
   {
     id: 6,
@@ -69,9 +69,9 @@ export const projectsData = [
   {
     id: 9,
     image: Work5,
-    title: "Todo App",
+    title: "Todo App w Zustand",
     category: "app",
-    link: "https://github.com/prathamrohatgi26/quillbotassignment",
+    link: "https://github.com/prathamrohatgi26/zustand-todolist",
   },
   {
     id: 10,
@@ -80,7 +80,6 @@ export const projectsData = [
     category: "web",
     link: "https://prathamrohatgi26.github.io/cv/",
   },
-  
 ];
 
 export const projectsNav = [
