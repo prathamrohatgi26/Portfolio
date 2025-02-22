@@ -19,7 +19,7 @@ export const projectsData = [
   {
     id: 2,
     image: Work12,
-    title: 'Self Driving Card - Neural Networks',
+    title: 'Self Driving Car - Neural Networks',
     category: 'web',
     link: 'https://self-driving-car-no-library.vercel.app'
   },
