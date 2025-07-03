@@ -1,0 +1,100 @@
+.recent-work {
+  background-color: var(--container-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  border-radius: 1.25rem;
+  margin-bottom: var(--mb-2);
+}
+
+.recent-work__title {
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+  text-align: center;
+  margin-bottom: var(--mb-2);
+  font-weight: var(--font-semi-bold);
+}
+
+
+.recent-work article {
+margin: 0 auto;
+}
+
+/* GitHub Calendar styling */
+.recent-work .react-github-calendar {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.recent-work .react-github-calendar__graph {
+  width: 100%;
+  max-width: 800px;
+}
+
+.recent-work .react-github-calendar__legend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+}
+
+.recent-work .react-github-calendar__legend-text {
+  margin-left: 0.5rem;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+  .recent-work {
+    padding: 1.5rem;
+  }
+  
+  .recent-work__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-1-5);
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  .recent-work {
+    padding: 1.25rem;
+  }
+  
+  .recent-work__title {
+    font-size: var(--normal-font-size);
+    margin-bottom: var(--mb-1);
+  }
+}
+
+/* For small devices */
+@media screen and (max-width: 576px) {
+  .recent-work {
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  
+  .recent-work__title {
+    font-size: var(--small-font-size);
+  }
+  
+  .recent-work .react-github-calendar__legend {
+    font-size: var(--tiny-font-size);
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .recent-work {
+    padding: 0.75rem;
+  }
+  
+  .recent-work__title {
+    font-size: var(--smaller-font-size);
+  }
+}
