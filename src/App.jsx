@@ -1,3 +1,4 @@
+
 import "./App.css";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
@@ -8,20 +9,22 @@ import Qualification from "./components/qualification/Qualification";
 import Scrollup from "./components/scrollup/Scrollup";
 import Skills from "./components/skills/Skills";
 import Work from "./components/work/Work";
+import RecentWork from "./components/recentWork/RecentWork";
 
 function App() {
   return (
     <>
       <Header />
 
-      <main className="main">
+      <div className="main">
         <Home />
         <About />
         <Skills />
         <Qualification />
         <Work />
+        <RecentWork />
         <Contact />
-      </main>
+      </div>
 
       <Footer />
       <Scrollup />
