@@ -65,24 +65,6 @@ export const projectsData = [
     category: "app",
     link: "https://react-weather-app-lemon.vercel.app/",
   },
-  {
-    id: 9,
-    image: Work5,
-    title: "Todo App w Zustand",
-    category: "app",
-    link: "https://github.com/prathamrohatgi26/zustand-todolist",
-  },
   
 ];
 
-export const projectsNav = [
-  {
-    name: "all",
-  },
-  {
-    name: "web",
-  },
-  {
-    name: "app",
-  },
-];
