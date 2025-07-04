@@ -1,11 +1,43 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Frontend = () => {
+  const importantRef = useRef(null);
+
+  useEffect(() => {
+    // Animate the !important text font size on scroll
+    gsap.fromTo(importantRef.current, 
+      {
+        fontSize: "3rem", // Start with large font size
+        opacity: 0.8
+      },
+      {
+        fontSize: "1rem", // End with normal font size
+        opacity: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: importantRef.current,
+          start: "top 80%",
+          end: "bottom 20%",
+          scrub: 1,
+          toggleActions: "play none none reverse"
+        }
+      }
+    );
+
+    return () => {
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    };
+  }, []);
+
   return (
     <div className="skills__content">
       <h3 className="skills__title">
         Frontend <br />
-        <span className="imp">!important</span>
+        <span ref={importantRef} className="imp">!important</span>
       </h3>
       <div className="skills__box">
         <div className="skills__group">
