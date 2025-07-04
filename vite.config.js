@@ -12,9 +12,3 @@ export default defineConfig({
   },
 });
 
-// export default defineConfig({
-//   plugins: [react()],
-//   server: {
-//     open: true,
-//   },
-// });

@@ -66,7 +66,8 @@
   justify-self: center;
   width: 340px;
   height: 320px;
-  animation: profile__animate 8s ease-in-out infinite 1s;
+  animation: profile__animate 8s ease-in-out infinite;
+  scale: .9;
 }
 
 @keyframes profile__animate {
