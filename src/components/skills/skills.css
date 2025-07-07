@@ -52,6 +52,9 @@
 
 .imp {
   color: red;
+  font-weight: 600;
+  transition: font-size 0.3s ease;
+  display: inline-block;
 }
 
 /*=============== BREAKPOINTS ===============*/

@@ -10,6 +10,7 @@ import Scrollup from "./components/scrollup/Scrollup";
 import Skills from "./components/skills/Skills";
 import Work from "./components/work/Work";
 import RecentWork from "./components/recentWork/RecentWork";
+import FloatingBrackets from "./components/floatingBrackets/FloatingBrackets";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
 
       <Footer />
       <Scrollup />
+      <FloatingBrackets />
     </>
   );
 }

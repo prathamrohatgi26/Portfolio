@@ -1,0 +1,56 @@
+.floating-bracket {
+  position: fixed;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #666;
+  opacity: 0.3;
+  z-index: 1000;
+  pointer-events: none;
+  font-family: 'Courier New', monospace;
+  transition: opacity 0.3s ease;
+}
+
+.floating-bracket:hover {
+  opacity: 0.6;
+}
+
+.left-bracket {
+  left: 20px;
+  top: 42vh;
+}
+
+.right-bracket {
+  right: 20px;
+  top: 42vh;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .floating-bracket {
+    font-size: 1.5rem;
+  }
+  
+  .left-bracket {
+    left: 10px;
+  }
+  
+  .right-bracket {
+    right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .floating-bracket {
+    font-size: 1.2rem;
+  }
+  
+  .left-bracket {
+    top: 48vh;
+    left: 5px;
+  }
+  
+  .right-bracket {
+    top: 48vh;
+    right: 5px;
+  }
+} 
