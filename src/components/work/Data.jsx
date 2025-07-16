@@ -7,8 +7,16 @@ import Work9 from "../../assets/work7.png";
 import Work10 from "../../assets/word10.png";
 import Work11 from "../../assets/Work11.png";
 import Work12 from "../../assets/work12.png";
+import ChhaviUi from "../../assets/chhaviui.png";
 
 export const projectsData = [
+  {
+    id: 0,
+    image: ChhaviUi,
+    title: "छवि UI",
+    category: "web",
+    link: "https://chhavi-ui.vercel.app/",
+  },
   {
     id: 1,
     image: Work11,
