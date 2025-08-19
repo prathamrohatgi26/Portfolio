@@ -7,6 +7,7 @@ import Work9 from "../../assets/work7.png";
 import Work10 from "../../assets/word10.png";
 import Work11 from "../../assets/Work11.png";
 import Work12 from "../../assets/work12.png";
+import Work13 from "../../assets/work13.png";
 import ChhaviUi from "../../assets/chhaviui.png";
 
 export const projectsData = [
@@ -26,53 +27,60 @@ export const projectsData = [
   },
   {
     id: 2,
-    image: Work12,
-    title: 'Self Driving Car - Neural Networks',
-    category: 'web',
-    link: 'https://self-driving-car-no-library.vercel.app'
+    image: Work13,
+    title: "Shadcn Mcp landing page",
+    category: "app",
+    link: "https://shadcn-mcp-landing-page.vercel.app/",
   },
   {
     id: 3,
+    image: Work12,
+    title: "Self Driving Car - Neural Networks",
+    category: "web",
+    link: "https://self-driving-car-no-library.vercel.app",
+  },
+  {
+    id: 4,
     image: Work10,
     title: "Bento Portfolio",
     category: "app",
     link: "https://pratham-bentofolio.vercel.app",
   },
   {
-    id: 4,
+    id: 5,
     image: Work7,
     title: "MakeMyWeb Landing Page",
     category: "web",
     link: "https://makemyweb.ai/",
   },
   {
-    id: 5,
+    id: 6,
     image: Work8,
     title: "Lens View",
     category: "app",
     link: "https://lensview.cloud/",
   },
   {
-    id: 6,
+    id: 7,
     image: Work9,
     title: "Flappy Bird",
     category: "app",
     link: "https://flappy-bird-pied-one.vercel.app",
   },
   {
-    id: 7,
+    id: 8,
     image: Work1,
     title: "LENS Corporation Website",
     category: "web",
     link: "https://lenscorp.ai/",
   },
   {
-    id: 8,
+    id: 9,
     image: Work2,
     title: "Weather App",
     category: "app",
     link: "https://react-weather-app-lemon.vercel.app/",
   },
-  
+
 ];
 
