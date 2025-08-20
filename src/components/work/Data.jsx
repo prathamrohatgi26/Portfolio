@@ -9,8 +9,15 @@ import Work11 from "../../assets/Work11.png";
 import Work12 from "../../assets/work12.png";
 import Work13 from "../../assets/work13.png";
 import ChhaviUi from "../../assets/chhaviui.png";
+import Work14 from '../../assets/work14.png'
 
 export const projectsData = [
+  {id: 0,
+    image: Work14,
+    title: "Solar System - ThreeJs",
+    category: "3d",
+    link: "https://solar-system-zeta-one.vercel.app/",
+  },
   {
     id: 0,
     image: ChhaviUi,
