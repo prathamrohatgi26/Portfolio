@@ -1,6 +1,5 @@
 import Work1 from "../../assets/work1.jpg";
 import Work2 from "../../assets/work2.jpg";
-import Work5 from "../../assets/work5.jpg";
 import Work7 from "../../assets/makemyweb.png";
 import Work8 from "../../assets/view.png";
 import Work9 from "../../assets/work7.png";
@@ -8,46 +7,56 @@ import Work10 from "../../assets/word10.png";
 import Work11 from "../../assets/Work11.png";
 import Work12 from "../../assets/work12.png";
 import Work13 from "../../assets/work13.png";
+
 import ChhaviUi from "../../assets/chhaviui.png";
 import Work14 from '../../assets/work14.png'
+import Work15 from '../../assets/work-tracker.png'
 
 export const projectsData = [
-  {id: 0,
+  {
+    id: 0,
     image: Work14,
     title: "Solar System - ThreeJs",
     category: "3d",
     link: "https://solar-system-zeta-one.vercel.app/",
   },
   {
-    id: 0,
+    id: 1,
+    image: Work15,
+    title: "PC Build & Budget Tracker",
+    category: "app",
+    link: "https://pc-builder-budget-tracker.vercel.app/",
+  },
+  {
+    id: 2,
     image: ChhaviUi,
     title: "छवि UI",
     category: "web",
     link: "https://chhavi-ui.vercel.app/",
   },
   {
-    id: 1,
+    id: 3,
     image: Work11,
     title: "Trekking Mate",
     category: "app",
     link: "https://www.trekkingmate.com/",
   },
   {
-    id: 2,
+    id: 4,
     image: Work13,
     title: "Shadcn Mcp landing page",
     category: "app",
     link: "https://shadcn-mcp-landing-page.vercel.app/",
   },
   {
-    id: 3,
+    id: 5,
     image: Work12,
     title: "Self Driving Car - Neural Networks",
     category: "web",
     link: "https://self-driving-car-no-library.vercel.app",
   },
   {
-    id: 4,
+    id: 6,
     image: Work10,
     title: "Bento Portfolio",
     category: "app",
