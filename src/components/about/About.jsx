@@ -16,17 +16,22 @@ const About = () => {
         <div className="about__data">
           <Info />
           <p className="about__description">
-            A Software Developer - Frontend based in Meerut, India, with a
-            passion for web development and creating efficient, visually
-            appealing interfaces. I enjoy working with modern web technologies
-            and am always eager to take on new challenges, pushing myself to
-            explore new areas in development.
+            A Frontend Engineer based in Bangalore, India, with a passion for
+            building fast, scalable, and visually engaging web applications. I
+            love working with modern web technologies and continuously challenge
+            myself to learn and explore new areas in development.
             <br></br>
             <br></br>
-            Currently, I lead a team of developers and am responsible for
-            building and managing LensView, a Video Management System. With 2+
-            years of experience, I've completed multiple projects using
-            technologies like Next.js, PostgreSQL, Svelte, and Pocketbase.
+            Currently, I work at Primetrace (Kutumb), where I focus on creating
+            efficient, high-performance web platforms while ensuring great user
+            experience and clean architecture. With nearly 3 years of
+            experience, I’ve worked with technologies like Next.js, React.js,
+            Svelte, React Native, Node, PostgreSQL, and Supabase, delivering
+            reliable and user-focused solutions.
+            <br></br>
+            <br></br>
+            Beyond frontend, I'm also exploring SEO optimization and backend
+            development to grow into a more versatile, full-stack role.
           </p>
 
           <a href={CV} download="" className="button button--flex">
