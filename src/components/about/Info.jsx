@@ -19,7 +19,7 @@ const Info = () => {
         <i className="bx bx-support about__icon"></i>
 
         <h3 className="about__title">Learning</h3>
-        <span className="about__subtitle">Always Learning</span>
+        <span className="about__subtitle">Always</span>
       </div>
     </div>
   );

@@ -7,12 +7,19 @@ import Work10 from "../../assets/word10.png";
 import Work11 from "../../assets/Work11.png";
 import Work12 from "../../assets/work12.png";
 import Work13 from "../../assets/work13.png";
-
 import ChhaviUi from "../../assets/chhaviui.png";
 import Work14 from '../../assets/work14.png'
 import Work15 from '../../assets/work-tracker.png'
+import SurfingPoint from '../../assets/surfing-point.png'
 
 export const projectsData = [
+  {
+    id: 0,
+    image: SurfingPoint,
+    title: "Surfing Point - Client Wesbite",
+    category: "3d",
+    link: "https://solar-system-zeta-one.vercel.app/",
+  },
   {
     id: 0,
     image: Work14,
@@ -37,7 +44,7 @@ export const projectsData = [
   {
     id: 3,
     image: Work11,
-    title: "Trekking Mate",
+    title: "Trekking Mate - Client Wesbite",
     category: "app",
     link: "https://www.trekkingmate.com/",
   },
@@ -65,7 +72,7 @@ export const projectsData = [
   {
     id: 5,
     image: Work7,
-    title: "MakeMyWeb Landing Page",
+    title: "Make My Web Landing Page",
     category: "web",
     link: "https://makemyweb.ai/",
   },
