@@ -57,28 +57,73 @@
 }
 
 .home__img {
-  background: url(../../assets/photu1.jpg);
-  background-repeat: repeat;
+  background: 
+    linear-gradient(135deg, rgba(75, 0, 130, 0.15) 0%, rgba(255, 140, 0, 0.12) 100%),
+    url(../../assets/photu.jpeg);
+  background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
-  box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
+  background-size: cover;
+  box-shadow:
+    0 8px 32px 0 rgba(31, 38, 135, 0.22),
+    0 1.5px 16px 0 rgba(255, 124, 0, 0.16),
+    0 0 0 9px rgb(0 0 0 / 30%) inset;
   order: 1;
   justify-self: center;
   width: 340px;
   height: 320px;
-  animation: profile__animate 8s ease-in-out infinite;
-  scale: .9;
+  animation: profile__animate 8s linear infinite;
+  scale: 1;
+  position: relative;
+  transition: box-shadow 0.6s cubic-bezier(.69,1.68,.6,1), scale 0.3s;
+  z-index: 1;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  cursor: pointer;
+  outline: 0 solid transparent;
+}
+
+.home__img::before {
+  content: "";
+  position: absolute;
+  inset: -10px;
+  border-radius: inherit;
+  z-index: -1;
+  background: radial-gradient(circle at 80% 10%, rgba(255,208,0,0.11) 0%,rgba(0,210,255,0.15) 100%);
+  filter: blur(8px);
+  opacity: .85;
+  transition: opacity 0.4s;
+}
+.home__img:hover, .home__img:focus {
+  box-shadow:
+    0 12px 36px 0 rgba(75, 0, 130, 0.28),
+    0 3.5px 32px 0 rgba(255, 124, 0, 0.22),
+    0 0 0 16px rgb(0 0 0 / 24%) inset;
+  scale: 1.045;
 }
 
 @keyframes profile__animate {
   0% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    filter: grayscale(0.05) brightness(1);
+  }
+  25% {
+    border-radius: 65% 35% 32% 68%/55% 33% 60% 47%;
+    filter: grayscale(0.08) brightness(1.05);
+  }
+  40% {
+    border-radius: 40% 70% 50% 50%/50% 60% 40% 60%;
+    filter: grayscale(0.11) brightness(1.13);
   }
   50% {
     border-radius: 30% 60% 70% 40%/50% 40% 50% 60%;
+    filter: grayscale(0.08) brightness(1.19);
+  }
+  60% {
+    border-radius: 42% 68% 57% 43%/47% 52% 38% 63%;
+    filter: grayscale(0.06) brightness(1.09);
   }
   100% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    filter: grayscale(0.05) brightness(1);
   }
 }
 
@@ -141,7 +186,6 @@
   .home__img {
     width: 250px;
     height: 240px;
-    box-shadow: inset 0 0 0 8px rgb(255 255 255 / 30%);
   }
 
   .home__scroll {
@@ -165,7 +209,6 @@
   }
 
   .home__img {
-    box-shadow: inset 0 0 0 6px rgb(255 255 255 / 30%);
     width: 220px;
     height: 210px;
     /* margin-left: 3rem; */

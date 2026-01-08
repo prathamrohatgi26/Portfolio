@@ -33,6 +33,16 @@
   border-radius: 1rem;
 }
 
+.work__card {
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s;
+}
+
+.work__card:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.15);
+}
+
+
 .work__img {
   width: 295px;
   height: 160px;
