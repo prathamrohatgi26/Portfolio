@@ -18,7 +18,7 @@ export const projectsData = [
     image: SurfingPoint,
     title: "Surfing Point - Client Wesbite",
     category: "3d",
-    link: "https://solar-system-zeta-one.vercel.app/",
+    link: "https://www.surfingpoint.in/",
   },
   {
     id: 0,
@@ -32,7 +32,7 @@ export const projectsData = [
     image: Work15,
     title: "PC Build & Budget Tracker",
     category: "app",
-    link: "https://pc-builder-budget-tracker.vercel.app/",
+    link: "https://pcbuilder.surfingpoint.in/",
   },
   {
     id: 2,
