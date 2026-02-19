@@ -1,16 +1,18 @@
 
+import { lazy, Suspense } from "react";
 import "./App.css";
-import About from "./components/about/About";
-import Contact from "./components/contact/Contact";
-import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Home from "./components/home/Home";
-import Qualification from "./components/qualification/Qualification";
-import Scrollup from "./components/scrollup/Scrollup";
-import Skills from "./components/skills/Skills";
-import Work from "./components/work/Work";
-import RecentWork from "./components/recentWork/RecentWork";
-import FloatingBrackets from "./components/floatingBrackets/FloatingBrackets";
+
+const About = lazy(() => import("./components/about/About"));
+const Skills = lazy(() => import("./components/skills/Skills"));
+const Qualification = lazy(() => import("./components/qualification/Qualification"));
+const Work = lazy(() => import("./components/work/Work"));
+const RecentWork = lazy(() => import("./components/recentWork/RecentWork"));
+const Contact = lazy(() => import("./components/contact/Contact"));
+const Footer = lazy(() => import("./components/footer/Footer"));
+const Scrollup = lazy(() => import("./components/scrollup/Scrollup"));
+const FloatingBrackets = lazy(() => import("./components/floatingBrackets/FloatingBrackets"));
 
 function App() {
   return (
@@ -19,17 +21,21 @@ function App() {
 
       <div className="main">
         <Home />
-        <About />
-        <Skills />
-        <Qualification />
-        <Work />
-        <RecentWork />
-        <Contact />
+        <Suspense fallback={null}>
+          <About />
+          <Skills />
+          <Qualification />
+          <Work />
+          <RecentWork />
+          <Contact />
+        </Suspense>
       </div>
 
-      <Footer />
-      <Scrollup />
-      <FloatingBrackets />
+      <Suspense fallback={null}>
+        <Footer />
+        <Scrollup />
+        <FloatingBrackets />
+      </Suspense>
     </>
   );
 }
