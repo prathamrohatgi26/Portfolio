@@ -1,100 +1,205 @@
-.recent-work {
-  background-color: var(--container-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 2rem;
-  border-radius: 1.25rem;
-  margin-bottom: var(--mb-2);
+/*=============== SECTION OVERRIDE ===============*/
+#recent-work .section__subtitle {
+  margin-bottom: 2rem;
 }
 
-.recent-work__title {
+/*=============== STATS ROW ===============*/
+.recent-work__stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+}
+
+.recent-work__stat {
+  background-color: var(--container-color);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 1.25rem;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recent-work__stat:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.recent-work__stat-icon {
+  font-size: 1.75rem;
+  color: var(--title-color);
+  margin-bottom: var(--mb-0-5);
+  display: block;
+}
+
+.recent-work__stat-value {
   font-size: var(--h2-font-size);
   color: var(--title-color);
-  text-align: center;
-  margin-bottom: var(--mb-2);
   font-weight: var(--font-semi-bold);
+  margin-bottom: var(--mb-0-25);
 }
 
+.recent-work__stat-label {
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+}
 
-.recent-work article {
-margin: 0 auto;
+/*=============== CALENDAR CARD ===============*/
+.recent-work {
+  background-color: var(--container-color);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.recent-work__header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1.25rem;
+  background-color: hsl(var(--hue), var(--sat), 94%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.recent-work__dots {
+  display: flex;
+  gap: 6px;
+}
+
+.recent-work__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.recent-work__dot--red {
+  background-color: #ff5f57;
+}
+
+.recent-work__dot--yellow {
+  background-color: #febc2e;
+}
+
+.recent-work__dot--green {
+  background-color: #28c840;
+}
+
+.recent-work__header-text {
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  font-weight: var(--font-medium);
+  letter-spacing: 0.02em;
+}
+
+.recent-work__calendar {
+  padding: 2rem;
+}
+
+.recent-work__calendar article {
+  margin: 0 auto;
 }
 
 /* GitHub Calendar styling */
-.recent-work .react-github-calendar {
+.recent-work__calendar .react-github-calendar {
   display: flex;
   justify-content: center;
   margin: 0 auto;
   max-width: 100%;
 }
 
-.recent-work .react-github-calendar__graph {
-  width: 100%;
-  max-width: 800px;
-}
-
-.recent-work .react-github-calendar__legend {
+/*=============== CTA BUTTON ===============*/
+.recent-work__cta {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  margin-top: 1rem;
-  font-size: var(--small-font-size);
-  color: var(--text-color);
 }
 
-.recent-work .react-github-calendar__legend-text {
-  margin-left: 0.5rem;
+.recent-work__cta .button {
+  gap: 0.5rem;
 }
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
-  .recent-work {
-    padding: 1.5rem;
+  .recent-work__stats {
+    gap: 1rem;
   }
-  
-  .recent-work__title {
+
+  .recent-work__stat {
+    padding: 1.25rem 0.75rem;
+  }
+
+  .recent-work__stat-icon {
+    font-size: 1.5rem;
+  }
+
+  .recent-work__stat-value {
     font-size: var(--h3-font-size);
-    margin-bottom: var(--mb-1-5);
+  }
+
+  .recent-work__calendar {
+    padding: 1.5rem;
   }
 }
 
 /* For medium devices */
 @media screen and (max-width: 768px) {
-  .recent-work {
-    padding: 1.25rem;
+  .recent-work__stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
   }
-  
-  .recent-work__title {
-    font-size: var(--normal-font-size);
-    margin-bottom: var(--mb-1);
+
+  .recent-work__stat {
+    padding: 1rem 0.5rem;
+  }
+
+  .recent-work__calendar {
+    padding: 1.25rem;
+    overflow-x: auto;
   }
 }
 
 /* For small devices */
 @media screen and (max-width: 576px) {
-  .recent-work {
+  .recent-work__stat-icon {
+    font-size: 1.25rem;
+  }
+
+  .recent-work__stat-value {
+    font-size: var(--normal-font-size);
+  }
+
+  .recent-work__stat-label {
+    font-size: var(--smaller-font-size);
+  }
+
+  .recent-work__calendar {
     padding: 1rem;
-    border-radius: 1rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
-  
-  .recent-work__title {
-    font-size: var(--small-font-size);
-  }
-  
-  .recent-work .react-github-calendar__legend {
-    font-size: var(--tiny-font-size);
-    flex-wrap: wrap;
-    gap: 0.25rem;
+
+  .recent-work__dot {
+    width: 10px;
+    height: 10px;
   }
 }
 
 @media screen and (max-width: 350px) {
-  .recent-work {
-    padding: 0.75rem;
+  .recent-work__stats {
+    gap: 0.5rem;
   }
-  
-  .recent-work__title {
-    font-size: var(--smaller-font-size);
+
+  .recent-work__stat {
+    padding: 0.75rem 0.35rem;
+    border-radius: 1rem;
+  }
+
+  .recent-work__calendar {
+    padding: 0.75rem;
   }
 }
